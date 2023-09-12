@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul
+        {
+            list-style: none;
+            padding: 0px;
+        }
+        li
+        {
+            float: left;
+            padding: 10px;
+        }
+        input
+        {
+            margin: 10px;
+        }
+        label
+        {
+            font-weight: bold;
+        }
+        table
+        {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td,th
+        {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #0f0;
+        }
+        th
+        {
+            background-color: #013212;
+            color: white;
+        }
+        tfoot td
+        {
+            border: 0px;
+        }
+    </style>
+    <title>Aula12/09</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Sobre</li></a>
+                <a href="#"><li>Contato</li></a>  &nbsp;
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Exercicio 1</h1>
+        <hr>
+        <form>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome"><br>
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf"><br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco"><br>
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="telefone" id="telefone"><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        </form>
+    </section>
+    <section>
+        <table>
+            <colgroup>
+                <col>
+                <col style="background-color: rgb(178, 13, 13);">
+                <col>
+                <col style="background-color: rgb(178, 13, 13);">    
+            </colgroup>
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Endereco</th>
+                <th>Telefone</th>
+                <th>email@email.com</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>José</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>A</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+            <form>
+                <input type="button" value="Anterior">
+                <select name="pag" id="pag">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <input type="button" value="Próximo">
+            </form>
+            </td>
+            </tr>
+        </tfoot>
+        </table>
+    </section>
+    <footer>
+        <p>&copy;2023</p>
+    </footer>
+</body>
+</html>
